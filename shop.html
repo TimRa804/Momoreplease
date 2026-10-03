@@ -3,32 +3,29 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Shop – MoMo</title>
+<title data-i18n="title.shop">Shop – MoMo</title>
 <meta name="description" content="Themed activity boxes with hands-on crafts, printable worksheets, and playful learning for preschoolers ages 3–5.">
 <link rel="icon" href="images/logo.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
 </head>
 <body data-page="shop">
 
-<div class="topbar"><div class="wrap"><span>🚚 Free shipping on all orders in the U.S.</span><span class="tag">Play · Learn · Grow</span></div></div>
+<div class="topbar"><div class="wrap"><span data-i18n="top.ship">🚚 Free shipping on all orders in the U.S.</span><span class="tag" data-i18n="top.tag">Play · Learn · Grow</span><div class="lang" role="group" aria-label="Language"><button data-lang="en" lang="en" title="English">EN</button><button data-lang="ru" lang="ru" title="Русский">RU</button><button data-lang="uz" lang="uz" title="Oʻzbekcha">UZ</button></div></div></div>
 
 <header class="site">
 <div class="wrap">
 <nav class="nav" id="nav" aria-label="Main">
   <ul class="left">
-    <li><a class="link" data-go="home" href="index.html">Home</a></li>
-    <li><a class="link" data-go="shop" href="shop.html">Shop</a></li>
-    <li><a class="link" data-go="about" href="about.html">About</a></li>
+    <li><a class="link" data-go="home" href="index.html" data-i18n="nav.home">Home</a></li>
+    <li><a class="link" data-go="shop" href="shop.html" data-i18n="nav.shop">Shop</a></li>
+    <li><a class="link" data-go="about" href="about.html" data-i18n="nav.about">About</a></li>
   </ul>
-  <button class="menu-toggle" id="menuBtn" aria-label="Menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  <button class="menu-toggle" id="menuBtn" aria-label="Menu" data-i18n-attr="aria-label:nav.menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
   <button class="logo-btn" data-go="home" aria-label="MoMo home"><img src="images/logo.png" alt="MoMo – More, please!"></button>
   <ul class="right">
-    <li class="link-li"><a class="link" data-go="faq" href="faq.html">FAQ</a></li>
-    <li class="link-li"><a class="link" data-go="contact" href="contact.html">Contact</a></li>
-    <li><button class="cart-btn" data-go="cart" aria-label="Cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h2.5l2.2 10.2a1.5 1.5 0 0 0 1.5 1.2h8.2a1.5 1.5 0 0 0 1.5-1.1L20.5 8H6.3"/><circle cx="9.5" cy="19.5" r="1.4"/><circle cx="17" cy="19.5" r="1.4"/></svg><span class="badge" id="badge">0</span></button></li>
+    <li class="link-li"><a class="link" data-go="faq" href="faq.html" data-i18n="nav.faq">FAQ</a></li>
+    <li class="link-li"><a class="link" data-go="contact" href="contact.html" data-i18n="nav.contact">Contact</a></li>
+    <li><button class="cart-btn" data-go="cart" aria-label="Cart" data-i18n-attr="aria-label:nav.cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h2.5l2.2 10.2a1.5 1.5 0 0 0 1.5 1.2h8.2a1.5 1.5 0 0 0 1.5-1.1L20.5 8H6.3"/><circle cx="9.5" cy="19.5" r="1.4"/><circle cx="17" cy="19.5" r="1.4"/></svg><span class="badge" id="badge">0</span></button></li>
   </ul>
 </nav>
 </div>
@@ -37,18 +34,17 @@
 <main>
 <div class="page active">
   <div class="wrap">
-    <div class="page-head"><h1>Shop</h1><p>One box, one theme, lots of little wins. Every box is $29 with free U.S. shipping.</p></div>
+    <div class="page-head"><h1 data-i18n="nav.shop">Shop</h1><p data-i18n="shop.lead">One box, one theme, lots of little wins. Every box is $29 with free U.S. shipping.</p></div>
     <div class="shop-grid">
-      <article class="card"><img src="images/cooking.jpg" alt="Cooking Box"><h3>Cooking Box</h3><p class="sub">A delicious way to learn! · Ages 3–5</p><div class="row"><b>$29.00</b><button class="btn small" data-add="cooking">Add to cart</button></div></article>
-      <article class="card"><img src="images/halloween.jpg" alt="Halloween Box"><h3>Halloween Box</h3><p class="sub">Spooky fun is coming soon! · Ages 3–5</p><div class="row"><b>$29.00</b><button class="btn small ghost" data-notify="Halloween Box">Stay tuned ♡</button></div></article>
-      <article class="card"><div class="ph" aria-hidden="true">🐄</div><h3>Farm Box<span class="pill">Coming soon</span></h3><p class="sub">Animals, crops and barnyard counting · Ages 3–5</p><div class="row"><b>$29.00</b><button class="btn small ghost" data-notify="Farm Box">Notify me</button></div></article>
-      <article class="card"><div class="ph" aria-hidden="true">🔤</div><h3>Learning Box<span class="pill">Coming soon</span></h3><p class="sub">Letters, shapes and first words · Ages 3–5</p><div class="row"><b>$29.00</b><button class="btn small ghost" data-notify="Learning Box">Notify me</button></div></article>
-      <article class="card"><div class="ph" aria-hidden="true">🐳</div><h3>Ocean Box<span class="pill">Coming soon</span></h3><p class="sub">Sea creatures and splashy crafts · Ages 3–5</p><div class="row"><b>$29.00</b><button class="btn small ghost" data-notify="Ocean Box">Notify me</button></div></article>
-      <article class="card"><div class="ph" aria-hidden="true">🦕</div><h3>Dinosaur Box<span class="pill">Coming soon</span></h3><p class="sub">Roar-some matching and making · Ages 3–5</p><div class="row"><b>$29.00</b><button class="btn small ghost" data-notify="Dinosaur Box">Notify me</button></div></article>
+      <article class="card"><img src="images/cooking.jpg" alt="Cooking Box"><h3><span data-i18n="box.cooking.name">Cooking Box</span></h3><p class="sub"><span data-i18n="box.cooking.sub">A delicious way to learn!</span> · <span data-i18n="meta.ages">Ages 3–5</span></p><div class="row"><b>$29.00</b><button class="btn small" data-add="cooking" data-i18n="btn.add">Add to cart</button></div></article>
+      <article class="card"><img src="images/halloween.jpg" alt="Halloween Box"><h3><span data-i18n="box.halloween.name">Halloween Box</span></h3><p class="sub"><span data-i18n="box.halloween.sub">Spooky fun is coming soon!</span> · <span data-i18n="meta.ages">Ages 3–5</span></p><div class="row"><b>$29.00</b><button class="btn small ghost" data-notify="box.halloween.name" data-i18n="btn.stayTuned">Stay tuned ♡</button></div></article>
+      <article class="card"><div class="ph" aria-hidden="true">🐄</div><h3><span data-i18n="box.farm.name">Farm Box</span><span class="pill" data-i18n="meta.soon">Coming soon</span></h3><p class="sub"><span data-i18n="box.farm.sub">Animals, crops and barnyard counting</span> · <span data-i18n="meta.ages">Ages 3–5</span></p><div class="row"><b>$29.00</b><button class="btn small ghost" data-notify="box.farm.name" data-i18n="btn.notify">Notify me</button></div></article>
+      <article class="card"><div class="ph" aria-hidden="true">🔤</div><h3><span data-i18n="box.learning.name">Learning Box</span><span class="pill" data-i18n="meta.soon">Coming soon</span></h3><p class="sub"><span data-i18n="box.learning.sub">Letters, shapes and first words</span> · <span data-i18n="meta.ages">Ages 3–5</span></p><div class="row"><b>$29.00</b><button class="btn small ghost" data-notify="box.learning.name" data-i18n="btn.notify">Notify me</button></div></article>
+      <article class="card"><div class="ph" aria-hidden="true">🐳</div><h3><span data-i18n="box.ocean.name">Ocean Box</span><span class="pill" data-i18n="meta.soon">Coming soon</span></h3><p class="sub"><span data-i18n="box.ocean.sub">Sea creatures and splashy crafts</span> · <span data-i18n="meta.ages">Ages 3–5</span></p><div class="row"><b>$29.00</b><button class="btn small ghost" data-notify="box.ocean.name" data-i18n="btn.notify">Notify me</button></div></article>
+      <article class="card"><div class="ph" aria-hidden="true">🦕</div><h3><span data-i18n="box.dino.name">Dinosaur Box</span><span class="pill" data-i18n="meta.soon">Coming soon</span></h3><p class="sub"><span data-i18n="box.dino.sub">Roar-some matching and making</span> · <span data-i18n="meta.ages">Ages 3–5</span></p><div class="row"><b>$29.00</b><button class="btn small ghost" data-notify="box.dino.name" data-i18n="btn.notify">Notify me</button></div></article>
     </div>
   </div>
 </div>
-
 </main>
 
 <footer class="site">
@@ -56,17 +52,18 @@
     <div class="foot">
       <img src="images/logo.png" alt="MoMo logo">
       <ul>
-        <li><a  data-go="home" href="index.html">Home</a></li><li><a  data-go="shop" href="shop.html">Shop</a></li><li><a  data-go="about" href="about.html">About</a></li><li><a  data-go="faq" href="faq.html">FAQ</a></li><li><a  data-go="contact" href="contact.html">Contact</a></li>
+        <li><a data-go="home" href="index.html" data-i18n="nav.home">Home</a></li><li><a data-go="shop" href="shop.html" data-i18n="nav.shop">Shop</a></li><li><a data-go="about" href="about.html" data-i18n="nav.about">About</a></li><li><a data-go="faq" href="faq.html" data-i18n="nav.faq">FAQ</a></li><li><a data-go="contact" href="contact.html" data-i18n="nav.contact">Contact</a></li>
       </ul>
-      <form class="mail" id="mailForm"><input type="email" required placeholder="Join our mailing list" aria-label="Email address"><button type="submit" aria-label="Join">→</button></form>
+      <form class="mail" id="mailForm"><input type="email" required placeholder="Join our mailing list" aria-label="Email address" data-i18n-attr="placeholder:mail.placeholder,aria-label:mail.label"><button type="submit" aria-label="Join" data-i18n-attr="aria-label:mail.join">→</button></form>
     </div>
-    <div class="legal"><span>© <span id="yr">2026</span> MoMo. All rights reserved.</span><em>Small activities. Big futures. ♡</em></div>
+    <div class="legal"><span>© <span id="yr">2026</span> MoMo. <span data-i18n="legal.rights">All rights reserved.</span></span><em data-i18n="legal.motto">Small activities. Big futures. ♡</em></div>
   </div>
 </footer>
 
-<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="mTitle"><div class="box"><h3 id="mTitle"></h3><p id="mText"></p><button class="btn small" id="mClose">Got it</button></div></div>
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="mTitle"><div class="box"><h3 id="mTitle"></h3><p id="mText"></p><button class="btn small" id="mClose" data-i18n="modal.close">Got it</button></div></div>
 <div class="toast" id="toast" role="status"></div>
 
+<script src="js/i18n.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

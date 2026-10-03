@@ -1,6 +1,7 @@
 # MoMo – More, please!
 
 Website for MoMo, themed activity boxes for children ages 3–5.
+Available in English, Russian and Uzbek (switch with EN / RU / UZ at the top of every page).
 A plain HTML / CSS / JavaScript site. No build tools needed.
 
 ## What each file does
@@ -14,7 +15,9 @@ A plain HTML / CSS / JavaScript site. No build tools needed.
 | `contact.html` | Contact form (not connected to email yet) |
 | `cart.html` | Shopping cart |
 | `css/styles.css` | All colors, fonts and layout. Brand colors are at the top, in `:root` |
+| `js/i18n.js` | Russian and Uzbek translations, and the language switcher |
 | `js/main.js` | Cart, mobile menu and pop-ups |
+| `fonts/` | Heading font (Caveat) and text font (Nunito), with Cyrillic letters for Russian |
 | `images/` | Logo and photos |
 | `.github/workflows/deploy.yml` | Publishes the site automatically when you push to GitHub |
 
@@ -69,7 +72,11 @@ open a **Pull Request** on GitHub, then merge it. That is how teams work and it 
 
 - **Change a price or product:** edit the card in `shop.html`, and the `PRODUCTS` list at the top of `js/main.js` for the cart.
 - **Add a new box page:** copy `shop.html`, rename it, and link to it.
-- **Change brand colors:** edit the variables at the top of `css/styles.css`.
+- **Change brand colors:** edit the variables at the top of `css/styles.css`. The palette comes from the logo:
+  beige (`--bg`, `--surface`), dusty pink (`--pink`, `--pink-soft`) and burgundy (`--ink`, `--rose`, `--deep`).
+- **Change wording:** English is written in the HTML pages. Each piece of text has a `data-i18n="key"`;
+  the Russian and Uzbek versions of that key are in `js/i18n.js`. When you change English text, update both translations too.
+- **Add new text:** give the element a new `data-i18n="some.key"` and add `'some.key':'…'` to the `ru` and `uz` lists in `js/i18n.js`.
 - **Add a photo:** put it in `images/` and use `<img src="images/your-photo.jpg" alt="Describe it">`.
 - **Use your own domain** (like momobox.com): Settings → Pages → Custom domain.
 
@@ -77,4 +84,5 @@ open a **Pull Request** on GitHub, then merge it. That is how teams work and it 
 
 - **Checkout / payments:** needs a store service (Shopify Buy Button, Stripe Payment Links or Square). Easiest first step: a Stripe Payment Link for the Cooking Box.
 - **Contact form and mailing list:** need a service such as Formspree or Mailchimp.
-- **Placeholder text:** About and FAQ copy, and emoji tiles for boxes without photos yet.
+- **Placeholder text:** About and FAQ copy (in all three languages), and emoji tiles for boxes without photos yet.
+- **Translations:** written by Claude. Have a native Russian and Uzbek speaker read them before launch.
