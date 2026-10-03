@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta name="robots" content="noindex">
 <meta charset="utf-8">
 <meta name="color-scheme" content="light">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title data-i18n="title.cart">Your Cart – MoMo</title>
+<title data-i18n="title.thanks">Thank you – MoMo</title>
 <meta name="description" content="Themed activity boxes with hands-on crafts, printable worksheets, and playful learning for preschoolers ages 2–5.">
 <link rel="icon" href="images/logo.png?v=4">
 <link rel="stylesheet" href="css/styles.css?v=7">
 </head>
-<body data-page="cart">
+<body data-page="thanks">
 
 <div class="topbar"><div class="wrap"><span data-i18n="top.ship">🚚 Free shipping on all orders in the U.S.</span><span class="tag" data-i18n="top.tag">Play · Learn · Grow</span><div class="lang" role="group" aria-label="Language"><button data-lang="en" lang="en" title="English" aria-label="English"><img src="images/flags/us.svg" alt="" width="28" height="19"></button><button data-lang="ru" lang="ru" title="Русский" aria-label="Русский"><img src="images/flags/ru.svg" alt="" width="28" height="19"></button><button data-lang="uz" lang="uz" title="Oʻzbekcha" aria-label="Oʻzbekcha"><img src="images/flags/uz.svg" alt="" width="28" height="19"></button></div></div></div>
 
@@ -34,12 +35,13 @@
 
 <main>
 <div class="page active">
-  <div class="wrap cart-wrap">
-    <div class="page-head" style="display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap">
-      <div><h1 data-i18n="cart.title">Your Cart</h1><p data-i18n="cart.lead">You're one step closer to meaningful play! ♡</p></div>
-      <a style="font-weight:700" data-go="shop" href="shop.html" data-i18n="cart.continue">Continue shopping →</a>
-    </div>
-    <div id="cartBody"></div>
+  <div class="wrap thanks">
+    <div class="thanks-heart" aria-hidden="true">♡</div>
+    <h1 data-i18n="thanks.title">Thank you for your order!</h1>
+    <p data-i18n="thanks.text1">Your payment went through. Stripe will email you a receipt in a few minutes.</p>
+    <p data-i18n="thanks.text2">We’re getting your MoMo box ready. Questions about your order? Write to us any time:</p>
+    <p><a class="thanks-mail" href="mailto:momoreplease@gmail.com">momoreplease@gmail.com</a></p>
+    <button class="btn" data-go="home" data-i18n="thanks.back">Back to home</button>
   </div>
 </div>
 </main>

@@ -1,6 +1,8 @@
 // MoMo site scripts: cart, menu, pop-ups. Text comes from js/i18n.js.
 (function(){
   var t=window.MOMO_I18N.t;
+  // Stripe Payment Link for checkout (starts with https://buy.stripe.com/). Leave empty to show the "almost ready" message.
+  var CHECKOUT_URL='';
   var PRODUCTS={
     cooking:{name:'box.cooking.name',sub:'box.cooking.sub',price:29,img:'images/cooking-box.jpg',ages:true},
     toolkit:{name:'box.toolkit.name',sub:'box.toolkit.sub',price:8.99,icon:'✂️'}
@@ -27,9 +29,12 @@
       rows+='<div class="cart-row"><div class="cart-item">'+(p.img?'<img src="'+p.img+'" alt="">':'<div class="ph" aria-hidden="true">'+p.icon+'</div>')+'<div><h3>'+t(p.name)+'</h3><small>'+t(p.sub)+'</small><small>'+(p.ages?t('meta.ages')+' · ':'')+t('meta.instock')+'</small><button class="link-btn" data-remove="'+k+'">'+t('cart.remove')+'</button></div></div><div class="c-price">'+money(p.price)+'</div><div class="qty"><button data-dec="'+k+'" aria-label="'+t('cart.dec')+'">−</button><span>'+q+'</span><button data-inc="'+k+'" aria-label="'+t('cart.inc')+'">+</button></div><div><b>'+money(p.price*q)+'</b></div></div>'});
     el.innerHTML='<div class="cart-table"><div class="cart-head"><span>'+t('cart.product')+'</span><span class="c-price">'+t('cart.price')+'</span><span>'+t('cart.qty')+'</span><span>'+t('cart.total')+'</span></div>'+rows+'</div>'+
       '<div class="cart-lower"><div class="summary"><h3>'+t('cart.noteTitle')+'</h3><textarea id="orderNote" placeholder="'+t('cart.notePlaceholder')+'" aria-label="'+t('cart.noteLabel')+'"></textarea></div>'+
-      '<div class="summary"><h3>'+t('cart.summary')+'</h3><div class="sum-row"><span>'+t('cart.subtotal')+' ('+t('cart.items',{n:count()})+')</span><span>'+money(sub)+'</span></div><div class="sum-row"><span>'+t('cart.shipping')+'</span><span>'+t('cart.free')+'</span></div><div class="sum-row total"><span>'+t('cart.total')+'</span><span>'+money(sub)+'</span></div><button class="btn" id="checkout">'+t('cart.checkout')+'</button></div></div>';
+      '<div class="summary"><h3>'+t('cart.summary')+'</h3><div class="sum-row"><span>'+t('cart.subtotal')+' ('+t('cart.items',{n:count()})+')</span><span>'+money(sub)+'</span></div><div class="sum-row"><span>'+t('cart.shipping')+'</span><span>'+t('cart.free')+'</span></div><div class="sum-row total"><span>'+t('cart.total')+'</span><span>'+money(sub)+'</span></div><button class="btn" id="checkout">'+t('cart.checkout')+'</button>'+(CHECKOUT_URL?'<p class="stripe-note">'+t('cart.stripeNote')+'</p>':'')+'</div></div>';
     $('#orderNote').value=note;
   }
+
+  // Back from a successful Stripe payment: empty the cart.
+  if(document.body.dataset.page==='thanks'){cart={};save()}
 
   var URL={home:'index.html',shop:'shop.html',about:'about.html',faq:'faq.html',contact:'contact.html',cart:'cart.html'};
   var current=document.body.dataset.page;
@@ -44,7 +49,7 @@
     else if(t2.dataset.inc){cart[t2.dataset.inc]++;save();renderCart()}
     else if(t2.dataset.dec){cart[t2.dataset.dec]=Math.max(0,cart[t2.dataset.dec]-1);if(!cart[t2.dataset.dec])delete cart[t2.dataset.dec];save();renderCart()}
     else if(t2.dataset.remove){delete cart[t2.dataset.remove];save();renderCart()}
-    else if(t2.id==='checkout'){modal(t('modal.checkoutTitle'),t('modal.checkoutText'))}
+    else if(t2.id==='checkout'){if(CHECKOUT_URL)location.href=CHECKOUT_URL;else modal(t('modal.checkoutTitle'),t('modal.checkoutText'))}
     else if(t2.id==='mClose'){$('#modal').classList.remove('open')}
   });
   function modal(h,p){$('#mTitle').textContent=h;$('#mText').textContent=p;$('#modal').classList.add('open');$('#mClose').focus()}

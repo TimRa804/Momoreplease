@@ -15,7 +15,8 @@
       'cart.emptyTitle':'Your cart is empty','cart.emptyText':'Pick a box to get the fun started.','cart.emptyBtn':'Shop our boxes',
       'cart.product':'Product','cart.price':'Price','cart.qty':'Quantity','cart.total':'Total','cart.remove':'Remove','cart.dec':'Decrease','cart.inc':'Increase',
       'cart.noteTitle':'Add a note (optional)','cart.notePlaceholder':'e.g. Gift message, special requests…','cart.noteLabel':'Order note',
-      'cart.summary':'Order summary','cart.subtotal':'Subtotal','cart.items':['{n} item','{n} items'],'cart.shipping':'Shipping','cart.free':'FREE','cart.checkout':'🔒 Proceed to checkout'
+      'cart.summary':'Order summary','cart.subtotal':'Subtotal','cart.items':['{n} item','{n} items'],'cart.shipping':'Shipping','cart.free':'FREE','cart.checkout':'🔒 Proceed to checkout',
+      'cart.stripeNote':'You’ll confirm quantities and can add the Starter Tool Kit on Stripe’s secure payment page.'
     },
 
     ru:{
@@ -85,7 +86,9 @@
       'cart.emptyTitle':'Ваша корзина пуста','cart.emptyText':'Выберите набор — и веселье начнётся.','cart.emptyBtn':'Выбрать набор',
       'cart.product':'Товар','cart.price':'Цена','cart.qty':'Количество','cart.total':'Итого','cart.remove':'Удалить','cart.dec':'Меньше','cart.inc':'Больше',
       'cart.noteTitle':'Комментарий (необязательно)','cart.notePlaceholder':'Например, поздравление или особые пожелания…','cart.noteLabel':'Комментарий к заказу',
-      'cart.summary':'Ваш заказ','cart.subtotal':'Подытог','cart.items':['{n} товар','{n} товара','{n} товаров'],'cart.shipping':'Доставка','cart.free':'БЕСПЛАТНО','cart.checkout':'🔒 Оформить заказ'
+      'cart.summary':'Ваш заказ','cart.subtotal':'Подытог','cart.items':['{n} товар','{n} товара','{n} товаров'],'cart.shipping':'Доставка','cart.free':'БЕСПЛАТНО','cart.checkout':'🔒 Оформить заказ',
+      'title.thanks':'Спасибо – MoMo','thanks.title':'Спасибо за заказ!','thanks.text1':'Оплата прошла успешно. Stripe пришлёт вам чек на почту в течение нескольких минут.','thanks.text2':'Мы уже собираем вашу коробку MoMo. Есть вопросы по заказу? Пишите нам в любое время:','thanks.back':'На главную',
+      'cart.stripeNote':'Количество можно уточнить, а Starter Tool Kit — добавить на защищённой странице оплаты Stripe.'
     },
 
     uz:{
@@ -155,7 +158,9 @@
       'cart.emptyTitle':'Savatingiz bo‘sh','cart.emptyText':'Qiziqarli mashg‘ulotni boshlash uchun quti tanlang.','cart.emptyBtn':'Qutilarni ko‘rish',
       'cart.product':'Mahsulot','cart.price':'Narxi','cart.qty':'Soni','cart.total':'Jami','cart.remove':'O‘chirish','cart.dec':'Kamaytirish','cart.inc':'Ko‘paytirish',
       'cart.noteTitle':'Izoh (ixtiyoriy)','cart.notePlaceholder':'Masalan, sovg‘a tilagi yoki maxsus so‘rovlar…','cart.noteLabel':'Buyurtma izohi',
-      'cart.summary':'Buyurtma tafsilotlari','cart.subtotal':'Oraliq summa','cart.items':['{n} ta mahsulot'],'cart.shipping':'Yetkazib berish','cart.free':'BEPUL','cart.checkout':'🔒 Buyurtma berish'
+      'cart.summary':'Buyurtma tafsilotlari','cart.subtotal':'Oraliq summa','cart.items':['{n} ta mahsulot'],'cart.shipping':'Yetkazib berish','cart.free':'BEPUL','cart.checkout':'🔒 Buyurtma berish',
+      'title.thanks':'Rahmat – MoMo','thanks.title':'Buyurtmangiz uchun rahmat!','thanks.text1':'To‘lov muvaffaqiyatli amalga oshdi. Stripe bir necha daqiqada elektron pochtangizga chek yuboradi.','thanks.text2':'MoMo qutingizni tayyorlayapmiz. Buyurtma bo‘yicha savollaringiz bormi? Istalgan vaqtda yozing:','thanks.back':'Bosh sahifaga',
+      'cart.stripeNote':'Sonini tasdiqlash va Starter Tool Kit’ni qo‘shish Stripe’ning xavfsiz to‘lov sahifasida amalga oshiriladi.'
     }
   };
 
