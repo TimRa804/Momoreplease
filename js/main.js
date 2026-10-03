@@ -2,7 +2,7 @@
 (function(){
   var t=window.MOMO_I18N.t;
   var PRODUCTS={
-    cooking:{name:'box.cooking.name',sub:'box.cooking.sub',price:29,img:'images/cooking.jpg',ages:true},
+    cooking:{name:'box.cooking.name',sub:'box.cooking.sub',price:29,img:'images/cooking-box.jpg',ages:true},
     toolkit:{name:'box.toolkit.name',sub:'box.toolkit.sub',price:8.99,icon:'✂️'}
   };
   var cart={};
