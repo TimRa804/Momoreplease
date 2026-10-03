@@ -119,6 +119,10 @@ summary::-webkit-details-marker{display:none}
 summary::after{content:"+";font-size:24px;line-height:1;color:var(--pink)}
 details[open] summary::after{content:"–"}
 details p{margin:0;padding:0 22px 20px;color:var(--ink-soft)}
+.faq-a{padding:0 22px 20px;color:var(--ink-soft)}
+.faq-a p{margin:0 0 10px;padding:0}
+.faq-a p:last-child{margin:0}
+.faq-a a{color:var(--rose);font-weight:700}
 form.card{background:var(--surface);border-radius:24px;padding:26px;display:grid;gap:14px;max-width:560px}
 label{font-weight:700;font-size:15px;display:grid;gap:6px}
 input,textarea{font:inherit;color:var(--ink);background:var(--card);border:1.5px solid var(--line);border-radius:12px;padding:12px 14px;width:100%}
