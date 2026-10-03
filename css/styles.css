@@ -149,6 +149,7 @@ input::placeholder,textarea::placeholder{color:var(--ink-soft);opacity:.7}
 .cart-row{border-top:1px solid var(--line)}
 .cart-item{display:flex;gap:16px;align-items:center}
 .cart-item img{width:96px;height:96px;object-fit:cover;border-radius:12px;flex:none}
+.cart-item .ph{width:96px;height:96px;border-radius:12px;flex:none;display:grid;place-items:center;font-size:40px;background:var(--surface)}
 .cart-item h3{font-size:27px}
 .cart-item small{display:block;color:var(--ink-soft)}
 .link-btn{background:none;border:0;padding:0;font:inherit;text-decoration:underline;cursor:pointer;color:inherit;font-size:14px;margin-top:4px}
@@ -181,6 +182,8 @@ footer.site{background:var(--deep);color:var(--on-deep);margin-top:30px;padding:
 .mail input{border-radius:10px 0 0 10px}
 .mail button{border:0;background:var(--pink);color:#3a0f19;border-radius:0 10px 10px 0;width:50px;cursor:pointer;font-size:18px}
 .legal{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-top:22px;font-size:14px;opacity:.85}
+.foot-mail{color:inherit;font-weight:700}
+.contact-mail a{color:var(--rose);font-weight:700}
 .legal em{font-family:var(--head);font-style:normal;font-weight:700;font-size:22px}
 .toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translate(-50%,30px);background:var(--ink);color:var(--bg);padding:12px 22px;border-radius:99px;font-weight:700;opacity:0;pointer-events:none;transition:.25s;z-index:60}
 .toast.show{opacity:1;transform:translate(-50%,0)}
@@ -203,7 +206,7 @@ footer.site{background:var(--deep);color:var(--on-deep);margin-top:30px;padding:
   .cart-row{grid-template-columns:1fr auto;gap:12px}
   .cart-row .c-price{display:none}
   .cart-item{min-width:0;gap:12px}
-  .cart-item img{width:72px;height:72px}
+  .cart-item img,.cart-item .ph{width:72px;height:72px}
   .cart-item h3{font-size:23px}
   .qty button{width:34px}
 }

@@ -6,9 +6,10 @@
   var T={
     en:{
       'box.cooking.name':'Cooking Box','box.cooking.sub':'A delicious way to learn!',
+      'box.toolkit.name':'Starter Tool Kit','box.toolkit.sub':'Scissors, glue and coloring tools — the basics for every box',
       'box.halloween.name':'Halloween Box','box.farm.name':'Farm Box','box.learning.name':'Learning Box','box.ocean.name':'Ocean Box','box.dino.name':'Dinosaur Box',
-      'meta.ages':'Ages 3–5','meta.instock':'In stock',
-      'toast.added':'Added to cart ♡','toast.subscribed':'Thank you! You’re on the list ♡','toast.contact':'Message ready to send once email is connected',
+      'meta.ages':'Ages 2–5','meta.instock':'In stock',
+      'toast.added':'Added to cart ♡','toast.subscribed':'Thank you! You’re on the list ♡','toast.contact':'Opening your email app…',
       'modal.soonTitle':'{name} is coming soon','modal.soonText':'Join our mailing list at the bottom of the page and we’ll tell you the moment it’s ready.',
       'modal.checkoutTitle':'Checkout is almost ready','modal.checkoutText':'Online payments aren’t connected to this preview yet. Once a store is linked, this button will take customers to secure checkout.',
       'cart.emptyTitle':'Your cart is empty','cart.emptyText':'Pick a box to get the fun started.','cart.emptyBtn':'Shop our boxes',
@@ -25,7 +26,7 @@
       'legal.rights':'Все права защищены.','legal.motto':'Маленькие занятия. Большое будущее. ♡','modal.close':'Понятно',
 
       'hero.title':'Полезные занятия для маленьких исследователей',
-      'hero.lead':'Тематические наборы с поделками, заданиями для печати и игровым обучением для дошкольников (3–5 лет).',
+      'hero.lead':'Тематические наборы с поделками, заданиями для печати и игровым обучением для детей 2–5 лет.',
       'hero.cta':'Выбрать набор →','hero.stamp':'УЧИМСЯ<br>ИГРАЯ<br>В КОРОБКЕ',
       'pillar.skills':'Развивает ранние навыки','pillar.hands':'Своими руками и без экранов','pillar.themed':'Продуманные темы','pillar.home':'Для дома и детского сада',
       'boxes.title':'Наши наборы','boxes.lead':'Сезонные и повседневные темы, которые пробуждают любопытство, творчество и уверенность.',
@@ -35,7 +36,8 @@
       'box.learning.name':'Набор «Учёба»','box.learning.sub':'Буквы, фигуры и первые слова',
       'box.ocean.name':'Набор «Океан»','box.ocean.sub':'Морские жители и яркие поделки',
       'box.dino.name':'Набор «Динозавры»','box.dino.sub':'Задания и поделки с динозаврами',
-      'meta.ages':'3–5 лет','meta.instock':'В наличии','meta.soon':'Скоро',
+      'box.toolkit.name':'Starter Tool Kit','box.toolkit.sub':'Ножницы, клей и карандаши — всё основное для любого набора',
+      'meta.ages':'2–5 лет','meta.instock':'В наличии','meta.soon':'Скоро',
       'btn.addArrow':'В корзину →','btn.add':'В корзину','btn.stayTuned':'Следите за новостями ♡','btn.notify':'Сообщить мне',
       'inside.title':'Что внутри каждого набора','inside.lead':'Всё, что нужно малышу для начала: открывай и играй.',
       'inside.logic':'Логика','inside.logicText':'Найди половинку для каждого фрукта и учись рассуждать.',
@@ -46,7 +48,7 @@
       'shop.lead':'Один набор, одна тема, много маленьких побед. Каждый набор стоит $29, доставка по США бесплатная.',
 
       'about.title':'О MoMo',
-      'about.p1':'«More, please!» — «Ещё, пожалуйста!» — так говорит малыш, когда находит то, что ему по-настоящему нравится. MoMo создаёт развивающие наборы, которые вызывают именно такую реакцию: тематические, практические и созданные для дошкольников от 3 до 5 лет.',
+      'about.p1':'«More, please!» — «Ещё, пожалуйста!» — так говорит малыш, когда находит то, что ему по-настоящему нравится. MoMo создаёт развивающие наборы, которые вызывают именно такую реакцию: тематические, практические и созданные для детей от 2 до 5 лет.',
       'about.p2':'В каждом наборе — поделка, задания для печати и игровое обучение вокруг одной темы. Дети тренируют ранние навыки — сопоставление, сортировку, счёт и мелкую моторику — без всяких экранов.',
       'about.p3':'Маленькие занятия. Большое будущее.',
       'value.hands':'Своими руками','value.handsText':'Вырезаем, рисуем, сортируем и сопоставляем. Настоящие материалы для маленьких ручек.',
@@ -74,10 +76,10 @@
       'faq.a9':"<p>Конечно! Momo Activity Box — весёлый подарок на день рождения, праздник или просто так, когда хочется подарить ребёнку интересное занятие.</p>",
 
       'contact.lead':'Есть вопросы, идеи или тема, которую вы хотели бы увидеть? Напишите нам.',
-      'contact.name':'Ваше имя','contact.email':'Эл. почта','contact.message':'Сообщение','contact.send':'Отправить',
+      'contact.or':'Или напишите нам на почту:','contact.name':'Ваше имя','contact.email':'Эл. почта','contact.message':'Сообщение','contact.send':'Отправить',
 
       'cart.title':'Ваша корзина','cart.lead':'Вы на шаг ближе к полезной игре! ♡','cart.continue':'Продолжить покупки →',
-      'toast.added':'Добавлено в корзину ♡','toast.subscribed':'Спасибо! Вы подписаны ♡','toast.contact':'Сообщение отправится, когда мы подключим почту',
+      'toast.added':'Добавлено в корзину ♡','toast.subscribed':'Спасибо! Вы подписаны ♡','toast.contact':'Открываем вашу почтовую программу…',
       'modal.soonTitle':'{name}: скоро в продаже','modal.soonText':'Подпишитесь на рассылку внизу страницы — мы сообщим, как только набор будет готов.',
       'modal.checkoutTitle':'Оформление заказа почти готово','modal.checkoutText':'Онлайн-оплата пока не подключена. Как только магазин будет подключён, эта кнопка откроет безопасную страницу оплаты.',
       'cart.emptyTitle':'Ваша корзина пуста','cart.emptyText':'Выберите набор — и веселье начнётся.','cart.emptyBtn':'Выбрать набор',
@@ -94,7 +96,7 @@
       'legal.rights':'Barcha huquqlar himoyalangan.','legal.motto':'Kichik mashg‘ulotlar. Katta kelajak. ♡','modal.close':'Tushunarli',
 
       'hero.title':'Kichkintoylar uchun foydali mashg‘ulotlar',
-      'hero.lead':'Maktabgacha yoshdagi bolalar (3–5 yosh) uchun qo‘l mehnati, chop etiladigan topshiriqlar va o‘yin orqali o‘rganishdan iborat mavzuli qutilar.',
+      'hero.lead':'2–5 yoshli bolalar uchun qo‘l mehnati, chop etiladigan topshiriqlar va o‘yin orqali o‘rganishdan iborat mavzuli qutilar.',
       'hero.cta':'Qutilarni ko‘rish →','hero.stamp':'QUTIDAGI<br>QIZIQARLI<br>TA’LIM',
       'pillar.skills':'Ilk ko‘nikmalarni rivojlantiradi','pillar.hands':'Qo‘l mehnati, ekransiz','pillar.themed':'Puxta o‘ylangan mavzular','pillar.home':'Uy va bog‘cha uchun',
       'boxes.title':'Bizning qutilarimiz','boxes.lead':'Qiziquvchanlik, ijodkorlik va o‘ziga ishonchni uyg‘otadigan mavsumiy va kundalik mavzular.',
@@ -104,7 +106,8 @@
       'box.learning.name':'«Ta’lim» qutisi','box.learning.sub':'Harflar, shakllar va ilk so‘zlar',
       'box.ocean.name':'«Okean» qutisi','box.ocean.sub':'Dengiz jonzotlari va quvnoq qo‘l ishlari',
       'box.dino.name':'«Dinozavrlar» qutisi','box.dino.sub':'Dinozavrlar bilan topshiriqlar va qo‘l ishlari',
-      'meta.ages':'3–5 yosh','meta.instock':'Sotuvda bor','meta.soon':'Tez orada',
+      'box.toolkit.name':'Starter Tool Kit','box.toolkit.sub':'Qaychi, yelim va rangli qalamlar — har bir quti uchun asosiy vositalar',
+      'meta.ages':'2–5 yosh','meta.instock':'Sotuvda bor','meta.soon':'Tez orada',
       'btn.addArrow':'Savatga →','btn.add':'Savatga qo‘shish','btn.stayTuned':'Kuzatib boring ♡','btn.notify':'Xabar bering',
       'inside.title':'Har bir qutida nima bor','inside.lead':'Kichkintoyga boshlash uchun kerak bo‘lgan hamma narsa: oching va o‘ynang.',
       'inside.logic':'Mantiq','inside.logicText':'Har bir mevani uning kesilgan yarmi bilan juftlang va fikrlashni mashq qiling.',
@@ -115,7 +118,7 @@
       'shop.lead':'Bitta quti, bitta mavzu, ko‘plab kichik g‘alabalar. Har bir quti $29, AQSh bo‘ylab yetkazib berish bepul.',
 
       'about.title':'MoMo haqida',
-      'about.p1':'«More, please!» — «Yana, iltimos!» — kichkintoy o‘ziga juda yoqqan narsani topganda shunday deydi. MoMo aynan shunday javob uyg‘otadigan mashg‘ulot qutilarini yaratadi: mavzuli, amaliy va 3 yoshdan 5 yoshgacha bo‘lgan bolalar uchun mo‘ljallangan.',
+      'about.p1':'«More, please!» — «Yana, iltimos!» — kichkintoy o‘ziga juda yoqqan narsani topganda shunday deydi. MoMo aynan shunday javob uyg‘otadigan mashg‘ulot qutilarini yaratadi: mavzuli, amaliy va 2 yoshdan 5 yoshgacha bo‘lgan bolalar uchun mo‘ljallangan.',
       'about.p2':'Har bir qutida bitta mavzu atrofida qo‘l mehnati, chop etiladigan topshiriqlar va o‘yin orqali o‘rganish jamlangan. Bolalar juftlash, saralash, sanash va mayda motorika kabi ilk ko‘nikmalarni ekransiz mashq qilishadi.',
       'about.p3':'Kichik mashg‘ulotlar. Katta kelajak.',
       'value.hands':'Qo‘l mehnati','value.handsText':'Qirqish, bo‘yash, saralash va juftlash. Kichkina qo‘llar uchun haqiqiy materiallar.',
@@ -143,10 +146,10 @@
       'faq.a9':"<p>Albatta! Momo Activity Box tug‘ilgan kun, bayramlar yoki shunchaki bolaga qiziqarli mashg‘ulot sovg‘a qilmoqchi bo‘lgan har qanday payt uchun ajoyib sovg‘a bo‘ladi.</p>",
 
       'contact.lead':'Savollar, g‘oyalar yoki ko‘rishni istagan mavzuingiz bormi? Bizga yozing.',
-      'contact.name':'Ismingiz','contact.email':'Elektron pochta','contact.message':'Xabar','contact.send':'Yuborish',
+      'contact.or':'Yoki bizga to‘g‘ridan-to‘g‘ri yozing:','contact.name':'Ismingiz','contact.email':'Elektron pochta','contact.message':'Xabar','contact.send':'Yuborish',
 
       'cart.title':'Savatingiz','cart.lead':'Foydali o‘yinga bir qadam yaqinlashdingiz! ♡','cart.continue':'Xaridni davom ettirish →',
-      'toast.added':'Savatga qo‘shildi ♡','toast.subscribed':'Rahmat! Siz obuna bo‘ldingiz ♡','toast.contact':'Pochta ulangach, xabar yuboriladi',
+      'toast.added':'Savatga qo‘shildi ♡','toast.subscribed':'Rahmat! Siz obuna bo‘ldingiz ♡','toast.contact':'Pochta ilovangiz ochilmoqda…',
       'modal.soonTitle':'{name} tez orada','modal.soonText':'Sahifa pastidagi yangiliklarga obuna bo‘ling — quti tayyor bo‘lishi bilan sizga xabar beramiz.',
       'modal.checkoutTitle':'Buyurtma berish deyarli tayyor','modal.checkoutText':'Onlayn to‘lov hali ulanmagan. Do‘kon ulangach, bu tugma xavfsiz to‘lov sahifasiga olib boradi.',
       'cart.emptyTitle':'Savatingiz bo‘sh','cart.emptyText':'Qiziqarli mashg‘ulotni boshlash uchun quti tanlang.','cart.emptyBtn':'Qutilarni ko‘rish',

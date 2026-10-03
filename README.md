@@ -1,6 +1,6 @@
 # MoMo – More, please!
 
-Website for MoMo, themed activity boxes for children ages 3–5.
+Website for MoMo, themed activity boxes for children ages 2–5.
 Available in English, Russian and Uzbek (switch with the flags at the top of every page: US = English, Russia = Russian, Uzbekistan = Uzbek).
 A plain HTML / CSS / JavaScript site. No build tools needed.
 

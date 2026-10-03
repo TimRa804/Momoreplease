@@ -1,7 +1,10 @@
 // MoMo site scripts: cart, menu, pop-ups. Text comes from js/i18n.js.
 (function(){
   var t=window.MOMO_I18N.t;
-  var PRODUCTS={cooking:{name:'box.cooking.name',sub:'box.cooking.sub',price:29,img:'images/cooking.jpg'}};
+  var PRODUCTS={
+    cooking:{name:'box.cooking.name',sub:'box.cooking.sub',price:29,img:'images/cooking.jpg',ages:true},
+    toolkit:{name:'box.toolkit.name',sub:'box.toolkit.sub',price:8.99,icon:'✂️'}
+  };
   var cart={};
   try{var s=localStorage.getItem('momo-cart');if(s)cart=JSON.parse(s)||{}}catch(e){}
   function save(){try{localStorage.setItem('momo-cart',JSON.stringify(cart))}catch(e){}}
@@ -21,7 +24,7 @@
     if(!ids.length){el.innerHTML='<div class="empty"><h3>'+t('cart.emptyTitle')+'</h3><p>'+t('cart.emptyText')+'</p><button class="btn" data-go="shop">'+t('cart.emptyBtn')+'</button></div>';return}
     var sub=0,rows='';
     ids.forEach(function(k){var p=PRODUCTS[k],q=cart[k];sub+=p.price*q;
-      rows+='<div class="cart-row"><div class="cart-item"><img src="'+p.img+'" alt=""><div><h3>'+t(p.name)+'</h3><small>'+t(p.sub)+'</small><small>'+t('meta.ages')+' · '+t('meta.instock')+'</small><button class="link-btn" data-remove="'+k+'">'+t('cart.remove')+'</button></div></div><div class="c-price">'+money(p.price)+'</div><div class="qty"><button data-dec="'+k+'" aria-label="'+t('cart.dec')+'">−</button><span>'+q+'</span><button data-inc="'+k+'" aria-label="'+t('cart.inc')+'">+</button></div><div><b>'+money(p.price*q)+'</b></div></div>'});
+      rows+='<div class="cart-row"><div class="cart-item">'+(p.img?'<img src="'+p.img+'" alt="">':'<div class="ph" aria-hidden="true">'+p.icon+'</div>')+'<div><h3>'+t(p.name)+'</h3><small>'+t(p.sub)+'</small><small>'+(p.ages?t('meta.ages')+' · ':'')+t('meta.instock')+'</small><button class="link-btn" data-remove="'+k+'">'+t('cart.remove')+'</button></div></div><div class="c-price">'+money(p.price)+'</div><div class="qty"><button data-dec="'+k+'" aria-label="'+t('cart.dec')+'">−</button><span>'+q+'</span><button data-inc="'+k+'" aria-label="'+t('cart.inc')+'">+</button></div><div><b>'+money(p.price*q)+'</b></div></div>'});
     el.innerHTML='<div class="cart-table"><div class="cart-head"><span>'+t('cart.product')+'</span><span class="c-price">'+t('cart.price')+'</span><span>'+t('cart.qty')+'</span><span>'+t('cart.total')+'</span></div>'+rows+'</div>'+
       '<div class="cart-lower"><div class="summary"><h3>'+t('cart.noteTitle')+'</h3><textarea id="orderNote" placeholder="'+t('cart.notePlaceholder')+'" aria-label="'+t('cart.noteLabel')+'"></textarea></div>'+
       '<div class="summary"><h3>'+t('cart.summary')+'</h3><div class="sum-row"><span>'+t('cart.subtotal')+' ('+t('cart.items',{n:count()})+')</span><span>'+money(sub)+'</span></div><div class="sum-row"><span>'+t('cart.shipping')+'</span><span>'+t('cart.free')+'</span></div><div class="sum-row total"><span>'+t('cart.total')+'</span><span>'+money(sub)+'</span></div><button class="btn" id="checkout">'+t('cart.checkout')+'</button></div></div>';
@@ -49,7 +52,10 @@
   document.addEventListener('keydown',function(e){if(e.key==='Escape')$('#modal').classList.remove('open')});
   $('#menuBtn').addEventListener('click',function(){var o=$('#nav').classList.toggle('open');this.setAttribute('aria-expanded',o)});
   if($('#mailForm'))$('#mailForm').addEventListener('submit',function(e){e.preventDefault();this.reset();toast(t('toast.subscribed'))});
-  if($('#contactForm'))$('#contactForm').addEventListener('submit',function(e){e.preventDefault();this.reset();toast(t('toast.contact'))});
+  // The contact form opens the visitor's email app with the message filled in, addressed to the business.
+  if($('#contactForm'))$('#contactForm').addEventListener('submit',function(e){e.preventDefault();var f=this.elements;
+    location.href='mailto:momoreplease@gmail.com?subject='+encodeURIComponent('MoMo – '+f.name.value)+'&body='+encodeURIComponent(f.msg.value+'\n\n'+f.name.value+' <'+f.email.value+'>');
+    toast(t('toast.contact'))});
   document.addEventListener('momo:lang',renderCart);
   $('#yr').textContent=new Date().getFullYear();
   renderCart();
