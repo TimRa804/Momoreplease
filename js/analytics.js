@@ -3,7 +3,7 @@
 // While it is empty, nothing is loaded and nothing is sent. Visits after ?test=1 are never tracked.
 // No names, emails, addresses or form text are ever sent — only anonymous clicks and page views.
 (function(){
-  var GA_ID='';
+  var GA_ID='G-FGCY3ZM4ZQ';
 
   var M=window.MOMO||{};
   if(!GA_ID||M.testMode)return;
