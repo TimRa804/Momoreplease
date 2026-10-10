@@ -2,6 +2,19 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FGCY3ZM4ZQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  // Owner test visits (?test=1, remembered for the tab; ?test=0 ends it) are not counted.
+  (function(){var t=false,l='en';try{var q=new URLSearchParams(location.search).get('test');if(q==='1')sessionStorage.setItem('momo-test','1');if(q==='0')sessionStorage.removeItem('momo-test');t=sessionStorage.getItem('momo-test')==='1';l=localStorage.getItem('momo-lang')||(navigator.language||'').slice(0,2);}catch(e){}
+    if(t)window['ga-disable-G-FGCY3ZM4ZQ']=true;
+    gtag('set','user_properties',{site_language:['en','ru','uz'].indexOf(l)<0?'en':l});})();
+  gtag('js', new Date());
+
+  gtag('config', 'G-FGCY3ZM4ZQ');
+</script>
 <meta name="color-scheme" content="light">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title data-i18n="title.cart">Your Cart – MoMo</title>
@@ -62,6 +75,6 @@
 
 <script src="js/i18n.js?v=7"></script>
 <script src="js/main.js?v=10"></script>
-<script src="js/analytics.js?v=2"></script>
+<script src="js/analytics.js?v=3"></script>
 </body>
 </html>

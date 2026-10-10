@@ -17,7 +17,7 @@ A plain HTML / CSS / JavaScript site. No build tools needed.
 | `css/styles.css` | All colors, fonts and layout. Brand colors are at the top, in `:root` |
 | `js/i18n.js` | Russian and Uzbek translations, and the language switcher |
 | `js/main.js` | Cart, mobile menu and pop-ups |
-| `js/analytics.js` | Google Analytics 4: paste the Measurement ID (`G-…`) at the top to switch it on |
+| `js/analytics.js` | Google Analytics 4 shop events (the Google tag itself, ID G-FGCY3ZM4ZQ, is in each page's `<head>`) |
 | `fonts/` | Heading font (Caveat) and text font (Nunito), with Cyrillic letters for Russian |
 | `images/` | Logo and photos |
 | `.github/workflows/deploy.yml` | Publishes the site automatically when you push to GitHub |
@@ -90,8 +90,8 @@ open a **Pull Request** on GitHub, then merge it. That is how teams work and it 
 
 ## Analytics (Google Analytics 4)
 
-Switch on by pasting the Measurement ID into `GA_ID` at the top of `js/analytics.js`.
-Nothing is sent while it is empty, and visits after `?test=1` are never counted.
+The Google tag (ID G-FGCY3ZM4ZQ) is pasted at the top of every page's `<head>`; `js/analytics.js` adds the shop events.
+Visits after `?test=1` are never counted (Google's `ga-disable` switch). New pages need the same `<head>` snippet.
 
 Events sent (no names, emails or form text):
 

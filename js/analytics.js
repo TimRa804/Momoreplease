@@ -1,25 +1,14 @@
 // MoMo website analytics (Google Analytics 4).
-// Paste your GA4 Measurement ID below (Admin → Data streams → your website → "G-XXXXXXXXXX").
-// While it is empty, nothing is loaded and nothing is sent. Visits after ?test=1 are never tracked.
+// Measurement ID G-FGCY3ZM4ZQ (set in the Google tag in each page's <head>).
+// Visits after ?test=1 are never tracked.
 // No names, emails, addresses or form text are ever sent — only anonymous clicks and page views.
 (function(){
-  var GA_ID='G-FGCY3ZM4ZQ';
-
+  // The Google tag itself is in the <head> of every page (Google's own snippet, ID G-FGCY3ZM4ZQ).
+  // This file only adds the shop events below. Test visits (?test=1) are switched off there and skipped here.
   var M=window.MOMO||{};
-  if(!GA_ID||M.testMode)return;
-
-  var s=document.createElement('script');
-  s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id='+GA_ID;
-  document.head.appendChild(s);
-  window.dataLayer=window.dataLayer||[];
-  function gtag(){window.dataLayer.push(arguments)}
-  window.gtag=gtag;
-
-  var lang=window.MOMO_I18N?window.MOMO_I18N.lang():'en';
+  if(typeof window.gtag!=='function'||M.testMode)return;
+  var gtag=window.gtag;
   var NAMES={cooking:'Cooking Box',toolkit:'Starter Tool Kit'};
-  gtag('js',new Date());
-  gtag('set','user_properties',{site_language:lang});
-  gtag('config',GA_ID);
 
   function send(name,params){gtag('event',name,params||{})}
   function items(cart){
