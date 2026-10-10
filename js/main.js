@@ -70,7 +70,7 @@
   if($('#mailForm'))$('#mailForm').addEventListener('submit',function(e){e.preventDefault();this.reset();toast(t('toast.subscribed'))});
   // The contact form opens the visitor's email app with the message filled in, addressed to the business.
   if($('#contactForm'))$('#contactForm').addEventListener('submit',function(e){e.preventDefault();var f=this.elements;
-    location.href='mailto:momoreplease@gmail.com?subject='+encodeURIComponent('MoMo – '+f.name.value)+'&body='+encodeURIComponent(f.msg.value+'\n\n'+f.name.value+' <'+f.email.value+'>');
+    location.href='mailto:momoboxusa@gmail.com?subject='+encodeURIComponent('MoMo – '+f.name.value)+'&body='+encodeURIComponent(f.msg.value+'\n\n'+f.name.value+' <'+f.email.value+'>');
     toast(t('toast.contact'))});
   document.addEventListener('momo:lang',renderCart);
   $('#yr').textContent=new Date().getFullYear();
