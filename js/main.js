@@ -1,8 +1,19 @@
 // MoMo site scripts: cart, menu, pop-ups. Text comes from js/i18n.js.
 (function(){
   var t=window.MOMO_I18N.t;
-  // Stripe Payment Link for checkout (starts with https://buy.stripe.com/). Leave empty to show the "almost ready" message.
-  var CHECKOUT_URL='';
+  // Stripe Payment Links for checkout. LIVE is what customers use (https://buy.stripe.com/...);
+  // leave it empty to show the "almost ready" message. TEST is only used after visiting any page
+  // with ?test=1 (stays on for that browser tab; ?test=0 turns it off), so test checkouts never reach customers.
+  var CHECKOUT_URL_LIVE='';
+  var CHECKOUT_URL_TEST='https://buy.stripe.com/test_aFa00c9Pu7gm9qk1sfdEs00';
+  var testMode=false;
+  try{
+    var q=new URLSearchParams(location.search).get('test');
+    if(q==='1')sessionStorage.setItem('momo-test','1');
+    if(q==='0')sessionStorage.removeItem('momo-test');
+    testMode=sessionStorage.getItem('momo-test')==='1';
+  }catch(e){}
+  var CHECKOUT_URL=testMode?CHECKOUT_URL_TEST:CHECKOUT_URL_LIVE;
   var PRODUCTS={
     cooking:{name:'box.cooking.name',sub:'box.cooking.sub',price:29,img:'images/cooking-box.jpg',ages:true},
     toolkit:{name:'box.toolkit.name',sub:'box.toolkit.sub',price:8.99,icon:'✂️'}
