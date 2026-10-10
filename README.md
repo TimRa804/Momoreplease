@@ -17,6 +17,7 @@ A plain HTML / CSS / JavaScript site. No build tools needed.
 | `css/styles.css` | All colors, fonts and layout. Brand colors are at the top, in `:root` |
 | `js/i18n.js` | Russian and Uzbek translations, and the language switcher |
 | `js/main.js` | Cart, mobile menu and pop-ups |
+| `js/analytics.js` | Google Analytics 4: paste the Measurement ID (`G-…`) at the top to switch it on |
 | `fonts/` | Heading font (Caveat) and text font (Nunito), with Cyrillic letters for Russian |
 | `images/` | Logo and photos |
 | `.github/workflows/deploy.yml` | Publishes the site automatically when you push to GitHub |
@@ -86,3 +87,22 @@ open a **Pull Request** on GitHub, then merge it. That is how teams work and it 
 - **Contact form and mailing list:** need a service such as Formspree or Mailchimp.
 - **Placeholder text:** About and FAQ copy (in all three languages), and emoji tiles for boxes without photos yet.
 - **Translations:** written by Claude. Have a native Russian and Uzbek speaker read them before launch.
+
+## Analytics (Google Analytics 4)
+
+Switch on by pasting the Measurement ID into `GA_ID` at the top of `js/analytics.js`.
+Nothing is sent while it is empty, and visits after `?test=1` are never counted.
+
+Events sent (no names, emails or form text):
+
+| Event | When |
+|---|---|
+| `page_view` | Every page (automatic) |
+| `view_item_list` | Shop page opened |
+| `add_to_cart` / `remove_from_cart` | Cart buttons, with product and price |
+| `notify_me` | "Notify me" / "Stay tuned" on a coming-soon box (`box` = farm, ocean, …) |
+| `language_change` | Flag clicked (`language` = en, ru, uz); also saved as the user property `site_language` |
+| `faq_open` | An FAQ question opened (`question` = faq.q1 … faq.q9) |
+| `view_cart` / `begin_checkout` | Cart page opened / checkout clicked (`checkout_ready` = yes or not_yet) |
+| `purchase` | Back from Stripe on thank-you.html (once per Stripe session; amount is the cart estimate, Stripe has the exact total) |
+| `sign_up` / `generate_lead` / `email_click` | Mailing list, contact form, email link |

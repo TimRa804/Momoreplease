@@ -44,8 +44,11 @@
     $('#orderNote').value=note;
   }
 
-  // Back from a successful Stripe payment: empty the cart.
-  if(document.body.dataset.page==='thanks'){cart={};save()}
+  // Back from a successful Stripe payment: empty the cart (keeping a copy for js/analytics.js).
+  var lastCart=null;
+  if(document.body.dataset.page==='thanks'){lastCart=cart;cart={};save()}
+  // Read-only view for js/analytics.js.
+  window.MOMO={products:PRODUCTS,cart:function(){return cart},lastCart:lastCart,testMode:testMode,checkoutReady:!!CHECKOUT_URL};
 
   var URL={home:'index.html',shop:'shop.html',about:'about.html',faq:'faq.html',contact:'contact.html',cart:'cart.html'};
   var current=document.body.dataset.page;
