@@ -15,7 +15,7 @@
   }catch(e){}
   var CHECKOUT_URL=testMode?CHECKOUT_URL_TEST:CHECKOUT_URL_LIVE;
   var PRODUCTS={
-    cooking:{name:'box.cooking.name',sub:'box.cooking.sub',price:44.99,img:'images/cooking-box.jpg',ages:true},
+    cooking:{name:'box.cooking.name',sub:'box.cooking.sub',price:44.99,img:'images/cooking-box-real.jpg',ages:true},
     toolkit:{name:'box.toolkit.name',sub:'box.toolkit.sub',price:8.99,img:'images/starter-kit.jpg'}
   };
   var cart={};
