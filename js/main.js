@@ -5,7 +5,7 @@
   // leave it empty to show the "almost ready" message. TEST is only used after visiting any page
   // with ?test=1 (stays on for that browser tab; ?test=0 turns it off), so test checkouts never reach customers.
   var CHECKOUT_URL_LIVE='';
-  var CHECKOUT_URL_TEST='https://buy.stripe.com/test_aFa00c9Pu7gm9qk1sfdEs00';
+  var CHECKOUT_URL_TEST='https://buy.stripe.com/test_9B6eV65zebwCbys0obdEs01';
   var testMode=false;
   try{
     var q=new URLSearchParams(location.search).get('test');
