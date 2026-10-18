@@ -4,7 +4,7 @@
   // Stripe Payment Links for checkout. LIVE is what customers use (https://buy.stripe.com/...);
   // leave it empty to show the "almost ready" message. TEST is only used after visiting any page
   // with ?test=1 (stays on for that browser tab; ?test=0 turns it off), so test checkouts never reach customers.
-  var CHECKOUT_URL_LIVE='';
+  var CHECKOUT_URL_LIVE='https://buy.stripe.com/3cIcN6ef7bOH2dt6Hpfw401';
   var CHECKOUT_URL_TEST='https://buy.stripe.com/test_9B6eV65zebwCbys0obdEs01';
   var testMode=false;
   try{
