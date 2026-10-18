@@ -40,10 +40,6 @@
       'box.toolkit.name':'Starter Tool Kit','box.toolkit.sub':'Ножницы, клей и карандаши — всё основное для любого набора',
       'meta.ages':'2–5 лет','meta.instock':'В наличии','meta.soon':'Скоро',
       'btn.addArrow':'В корзину →','btn.add':'В корзину','btn.stayTuned':'Следите за новостями ♡','btn.notify':'Сообщить мне',
-      'inside.title':'Что внутри каждого набора','inside.lead':'Всё, что нужно малышу для начала: открывай и играй.',
-      'inside.logic':'Логика','inside.logicText':'Найди половинку для каждого фрукта и учись рассуждать.',
-      'inside.craft':'Поделка','inside.craftText':'Шаг за шагом сделай пончик из бумажной тарелки — от вырезания до посыпки.',
-      'inside.play':'Игра и фантазия','inside.playText':'Тематические задания и игры, которые развивают ранние навыки.',
       'banner':'Любопытные умы — светлое будущее','follow.title':'Следите за нами','follow.sub':'Идеи · Занятия · Счастливые дети',
 
       'shop.lead':'Один набор, одна тема, много маленьких побед. Каждый набор стоит $29, доставка по США бесплатная.',
@@ -113,10 +109,6 @@
       'box.toolkit.name':'Starter Tool Kit','box.toolkit.sub':'Qaychi, yelim va rangli qalamlar — har bir quti uchun asosiy vositalar',
       'meta.ages':'2–5 yosh','meta.instock':'Sotuvda bor','meta.soon':'Tez orada',
       'btn.addArrow':'Savatga →','btn.add':'Savatga qo‘shish','btn.stayTuned':'Kuzatib boring ♡','btn.notify':'Xabar bering',
-      'inside.title':'Har bir qutida nima bor','inside.lead':'Kichkintoyga boshlash uchun kerak bo‘lgan hamma narsa: oching va o‘ynang.',
-      'inside.logic':'Mantiq','inside.logicText':'Har bir mevani uning kesilgan yarmi bilan juftlang va fikrlashni mashq qiling.',
-      'inside.craft':'Qo‘l mehnati','inside.craftText':'Qog‘oz likopchadan bosqichma-bosqich donut yasang — qirqishdan sepkigacha.',
-      'inside.play':'O‘yin va tasavvur','inside.playText':'Ilk ko‘nikmalarni rivojlantiruvchi mavzuli topshiriqlar va o‘yinlar.',
       'banner':'Qiziquvchan aql — yorug‘ kelajak','follow.title':'Bizni kuzatib boring','follow.sub':'G‘oyalar · Mashg‘ulotlar · Baxtli bolalar',
 
       'shop.lead':'Bitta quti, bitta mavzu, ko‘plab kichik g‘alabalar. Har bir quti $29, AQSh bo‘ylab yetkazib berish bepul.',

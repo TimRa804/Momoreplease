@@ -88,14 +88,6 @@ section.block{padding:64px 0}
 .meta svg{width:20px;height:20px;color:var(--pink)}
 .price{font-weight:800;font-size:19px;margin-bottom:12px}
 
-/* how it works */
-.inside{background:var(--pink-soft)}
-.inside .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.inside figure{margin:0;background:var(--card);border-radius:22px;overflow:hidden;border:1px solid var(--line)}
-.inside figure img{width:100%;aspect-ratio:4/3;object-fit:cover}
-.inside figcaption{padding:16px 18px 20px}
-.inside figcaption strong{font-family:var(--head);font-weight:700;font-size:26px;display:block;margin-bottom:4px}
-.inside figcaption span{color:var(--ink-soft);font-size:15.5px}
 
 /* a peek inside the box (real photos) */
 .peek{background:var(--surface)}
@@ -213,7 +205,7 @@ footer.site{background:var(--deep);color:var(--on-deep);margin-top:30px;padding:
 .toast.show{opacity:1;transform:translate(-50%,0)}
 
 @media (max-width:860px){
-  .hero .wrap,.grid2,.cart-lower,.inside .grid3,.values,.peek-grid{grid-template-columns:1fr}
+  .hero .wrap,.grid2,.cart-lower,.values,.peek-grid{grid-template-columns:1fr}
   .shop-grid{grid-template-columns:1fr 1fr}
   .gallery{grid-template-columns:repeat(3,1fr)}
   .gallery img:nth-child(n+4){display:none}
@@ -246,7 +238,6 @@ footer.site{background:var(--deep);color:var(--on-deep);margin-top:30px;padding:
   .cart-item{grid-column:1/-1}
   .cart-row .qty{justify-self:start}
   .cart-row>div:last-child{text-align:right}
-  section.block.inside{padding:44px 0!important}
   .sec-head{margin-bottom:24px}
   .hero .wrap{padding-top:36px;padding-bottom:40px;gap:28px}
   .pillars{margin-top:28px}
