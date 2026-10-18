@@ -5,9 +5,9 @@
 (function(){
   var T={
     en:{
+      'box.toolkit.desc':'No scissors or glue at home? Add our kit to your box and you\u2019re ready to start.',
       'box.cooking.name':"Cooking Activity Box",'box.cooking.sub':"30 activities + all materials",
       'box.toolkit.name':'Starter Tool Kit','box.toolkit.sub':"Scissors • Glue • Marker • Colored pencils",
-      'box.halloween.name':'Halloween Box','box.farm.name':'Farm Box','box.learning.name':'Learning Box','box.ocean.name':'Ocean Box','box.dino.name':'Dinosaur Box',
       'meta.ages':'Ages 2–5','meta.instock':'In stock',
       'toast.added':'Added to cart ♡','toast.subscribed':'Thank you! You’re on the list ♡','toast.contact':'Opening your email app…',
       'modal.soonTitle':'{name} is coming soon','modal.soonText':'Join our mailing list at the bottom of the page and we’ll tell you the moment it’s ready.',
@@ -20,6 +20,7 @@
     },
 
     ru:{
+      'box.toolkit.desc':'Нет дома ножниц или клея? Добавьте наш набор к коробке — и можно начинать.',
       'title.home':'MoMo – More, please! Развивающие наборы для малышей','title.shop':'Магазин – MoMo','title.about':'О нас – MoMo','title.faq':'Вопросы – MoMo','title.contact':'Контакты – MoMo','title.cart':'Корзина – MoMo',
       'top.ship':'🚚 Бесплатная доставка всех заказов по США','top.tag':'Играем · Учимся · Растём',
       'nav.home':'Главная','nav.shop':'Магазин','nav.about':'О нас','nav.faq':'Вопросы','nav.contact':'Контакты','nav.menu':'Меню','nav.cart':'Корзина',
@@ -32,11 +33,8 @@
       'pillar.skills':'Развивает ранние навыки','pillar.hands':'Своими руками и без экранов','pillar.themed':'Продуманные темы','pillar.home':'Для дома и детского сада',
       'boxes.title':'Наши наборы','boxes.lead':'Сезонные и повседневные темы, которые пробуждают любопытство, творчество и уверенность.',
       'box.cooking.name':"Набор занятий «Кулинария»",'box.cooking.desc':"Вкусный способ учиться! 30 поделок и занятий своими руками — все материалы уже в коробке.",'box.cooking.sub':"30 занятий + все материалы",
-      'box.halloween.name':'Набор «Хэллоуин»','box.halloween.desc':'Скоро — жутко весело! Праздничный набор с поделками, заданиями и сезонными занятиями.','box.halloween.sub':'Скоро — жутко весело!',
-      'box.farm.name':'Набор «Ферма»','box.farm.sub':'Животные, урожай и счёт на ферме',
-      'box.learning.name':'Набор «Учёба»','box.learning.sub':'Буквы, фигуры и первые слова',
-      'box.ocean.name':'Набор «Океан»','box.ocean.sub':'Морские жители и яркие поделки',
-      'box.dino.name':'Набор «Динозавры»','box.dino.sub':'Задания и поделки с динозаврами',
+      
+      
       'box.toolkit.name':'Starter Tool Kit','box.toolkit.sub':"Ножницы • Клей • Маркер • Цветные карандаши",
       'meta.ages':'2–5 лет','meta.instock':'В наличии','meta.soon':'Скоро',
       'btn.addArrow':'В корзину →','btn.add':'В корзину','btn.stayTuned':'Следите за новостями ♡','btn.notify':'Сообщить мне',
@@ -90,6 +88,7 @@
     },
 
     uz:{
+      'box.toolkit.desc':'Uyda qaychi yoki yelim yo‘qmi? To‘plamimizni qutiga qo‘shing — va boshlashga tayyorsiz.',
       'title.home':'MoMo – More, please! Kichkintoylar uchun mashg‘ulot qutilari','title.shop':'Do‘kon – MoMo','title.about':'Biz haqimizda – MoMo','title.faq':'Savollar – MoMo','title.contact':'Aloqa – MoMo','title.cart':'Savat – MoMo',
       'top.ship':'🚚 AQSh bo‘ylab barcha buyurtmalar bepul yetkaziladi','top.tag':'O‘yna · O‘rgan · O‘s',
       'nav.home':'Bosh sahifa','nav.shop':'Do‘kon','nav.about':'Biz haqimizda','nav.faq':'Savollar','nav.contact':'Aloqa','nav.menu':'Menyu','nav.cart':'Savat',
@@ -102,11 +101,8 @@
       'pillar.skills':'Ilk ko‘nikmalarni rivojlantiradi','pillar.hands':'Qo‘l mehnati, ekransiz','pillar.themed':'Puxta o‘ylangan mavzular','pillar.home':'Uy va bog‘cha uchun',
       'boxes.title':'Bizning qutilarimiz','boxes.lead':'Qiziquvchanlik, ijodkorlik va o‘ziga ishonchni uyg‘otadigan mavsumiy va kundalik mavzular.',
       'box.cooking.name':"«Oshpazlik» mashg‘ulotlar qutisi",'box.cooking.desc':"O‘rganishning mazali usuli! 30 ta qo‘l mehnati va mashg‘ulot — barcha materiallar qutining ichida.",'box.cooking.sub':"30 ta mashg‘ulot + barcha materiallar",
-      'box.halloween.name':'«Halloween» qutisi','box.halloween.desc':'Tez orada — qo‘rqinchli darajada qiziqarli! Qo‘l mehnati, topshiriqlar va mavsumiy mashg‘ulotlarga to‘la bayramona quti.','box.halloween.sub':'Tez orada — qo‘rqinchli darajada qiziqarli!',
-      'box.farm.name':'«Ferma» qutisi','box.farm.sub':'Hayvonlar, ekinlar va fermada sanash',
-      'box.learning.name':'«Ta’lim» qutisi','box.learning.sub':'Harflar, shakllar va ilk so‘zlar',
-      'box.ocean.name':'«Okean» qutisi','box.ocean.sub':'Dengiz jonzotlari va quvnoq qo‘l ishlari',
-      'box.dino.name':'«Dinozavrlar» qutisi','box.dino.sub':'Dinozavrlar bilan topshiriqlar va qo‘l ishlari',
+      
+      
       'box.toolkit.name':'Starter Tool Kit','box.toolkit.sub':"Qaychi • Yelim • Marker • Rangli qalamlar",
       'meta.ages':'2–5 yosh','meta.instock':'Sotuvda bor','meta.soon':'Tez orada',
       'btn.addArrow':'Savatga →','btn.add':'Savatga qo‘shish','btn.stayTuned':'Kuzatib boring ♡','btn.notify':'Xabar bering',
