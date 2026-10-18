@@ -8,7 +8,7 @@
   var M=window.MOMO||{};
   if(typeof window.gtag!=='function'||M.testMode)return;
   var gtag=window.gtag;
-  var NAMES={cooking:'Cooking Box',toolkit:'Starter Tool Kit'};
+  var NAMES={cooking:'Cooking Activity Box',toolkit:'Starter Tool Kit'};
 
   function send(name,params){gtag('event',name,params||{})}
   function items(cart){
